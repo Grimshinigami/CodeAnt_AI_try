@@ -1,50 +1,124 @@
-# React + TypeScript + Vite
+# Vite App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple project bootstrapped with [Vite](https://vitejs.dev/).
 
-Currently, two official plugins are available:
+## Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Ensure you have the following installed on your system:
 
-## Expanding the ESLint configuration
+- [Node.js](https://nodejs.org/) (version 14.18+ or 16+ recommended)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Getting Started
 
-- Configure the top-level `parserOptions` property like this:
+Follow these steps to run the Vite app locally:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Grimshinigami/CodeAnt_AI_try.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### 2. Navigate to the Project Directory
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd CodeAnt_AI_try
 ```
+
+### 3. Install Dependencies
+
+Using npm:
+
+```bash
+npm install
+```
+
+Or using yarn:
+
+```bash
+yarn install
+```
+
+### 4. Start the Development Server
+
+Using npm:
+
+```bash
+npm run dev
+```
+
+Or using yarn:
+
+```bash
+yarn dev
+```
+
+The development server will start, and you can access the app at:
+
+```
+http://localhost:5173
+```
+### 6. Routes
+
+Navigate to Repos page by clicking any login button.
+
+### 7. Build for Production
+
+To create an optimized production build:
+
+Using npm:
+
+```bash
+npm run build
+```
+
+Or using yarn:
+
+```bash
+yarn build
+```
+
+The build artifacts will be stored in the `dist` directory.
+
+### 8. Preview the Production Build
+
+To preview the production build locally:
+
+Using npm:
+
+```bash
+npm run preview
+```
+
+Or using yarn:
+
+```bash
+yarn preview
+```
+
+The preview server will start, and you can access the app at:
+
+```
+http://localhost:4173
+```
+
+## Project Structure
+
+```plaintext
+├── public/         # Static assets
+├── src/            # Source code
+│   ├── assets/     # Images, fonts, etc.
+│   ├── components/ # Reusable components
+│   ├── App.jsx     # Main app component
+│   └── main.jsx    # Entry point
+├── index.html      # Main HTML file
+├── package.json    # Project dependencies and scripts
+└── vite.config.js  # Vite configuration
+```
+
+## Learn More
+
+- [Vite Documentation](https://vitejs.dev/)
+- [React Documentation](https://reactjs.org/) (if using React)
+- [Vue Documentation](https://vuejs.org/) (if using Vue)
+- [Svelte Documentation](https://svelte.dev/) (if using Svelte)
