@@ -90,8 +90,8 @@ function Login() {
                     </CardContent>
                 </Card>
             </div>
-            <div className=" w-[39.44%] flex ">
-                <img src={SignInPic} className="" alt="CodeAnt Logo" />
+            <div className=" w-[39.44%] h-[33.22%] flex items-end">
+                <img src={SignInPic} className="xl:h-full" alt="CodeAnt Logo" />
             </div>
         </div>
         }
