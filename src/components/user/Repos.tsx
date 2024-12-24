@@ -83,6 +83,7 @@ function Repos() {
     <div className=" w-full h-full flex md:flex-row flex-col">
         <NavigationBar currBtn={currBtn} setCurrBtn={setCurrBtn} users={Users} currUser={currUser} setCurrUser={setCurrUser}/>
         <div className="h-full flex-grow md:bg-[#FAFAFA] md:p-6 ">
+            {currBtn==0 && 
             <div className=" w-full h-full bg-white md:border-2 md:border-[#E9EAEB] md:rounded-xl flex flex-col">
               <RepoHeader totalRepos={Repos.length}/>
               <ScrollArea className="  flex-grow flex-col p-[2.5px]">
@@ -90,7 +91,7 @@ function Repos() {
                   <SingleRepo key={index} {...repo} cs={index<Repos.length-1?'border-b-2':'rounded-b-xl'}/>
                 ))}
               </ScrollArea>
-            </div>
+            </div>}
         </div>
     </div>
   )
